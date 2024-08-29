@@ -47,6 +47,7 @@ import zipfile; zipfile.ZipFile('/content/ML-SDUPerSqFeet/Model/model.zip').extr
 Load the Pre-trained ML model 
 ```
 loaded_clf = joblib.load('/content/ML-SDUPerSqFeet/Model/model.joblib')
+le = joblib.load('/content/ML-SDUPerSqFeet/Model/label_encoder.joblib')
 print("Model loaded.")
 ```
 Do the prediction for a new data, the following is just a sample: 
