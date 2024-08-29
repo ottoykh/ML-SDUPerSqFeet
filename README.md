@@ -8,6 +8,9 @@ ML can adopted to understanding the factors leading to property subdivision. Tho
 * Larger properties may be harder to rent out, especially in a market dominated by smaller families. The size of these units can make them unaffordable for many, leading to prolonged vacancies.
 * Subdividing a property generally increases its economic value compared to keeping it as a single unit. For property owners, the potential rental income from subdivided units can be significantly higher—often two to three times the rent of the non-subdivided unit when calculated on a per-square-foot basis.
 
+#### EDA about the PerSqFeet to classified the SDU in Hong Kong (Trainning dataset, 12000+ sample)
+![Trainning data EDA](https://raw.githubusercontent.com/ottoykh/ML-SDUPerSqFeet/main/Image_Ref/Train_EDA.png "Trainning data EDA").
+
 ### Prerequisite
 1. Web crawling from the Real-estate online agent 
 2. Gather and geocode the data into 'PreSqFeet' and georeference it 
@@ -69,12 +72,12 @@ print(classification_report(new_data['SDU_cat'], y_pred_loaded))
 
 Ref: https://portal.csdi.gov.hk/geoportal/?datasetId=emsd_rcd_1638867755735_63142 
 
-* Observed and defined SDU Protential areas (Polygon, within ? 0,1) 
+* Observed and defined SDU Potential areas (Polygon, within ? 0,1) 
 
 * With building management communities (三無大廈? 0,1)
 
 Ref : https://portal.csdi.gov.hk/geoportal/?lang=zh-hk&datasetId=landreg_rcd_1668151937201_80478
-
+Potential
 * Per-Square Feet data from the online agent 
 
 Ref : https://hk.centanet.com/findproperty/list/buy
